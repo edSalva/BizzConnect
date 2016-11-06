@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.edawg.bizconnect_poc.CardViewActivity">
+    <ExpandableListView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:id="@+id/explist">
+
+    </ExpandableListView>
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchView"
+                android:layout_gravity="center_horizontal" />
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView"
+                android:layout_gravity="center_horizontal"
+
+                />
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/contact1_pic"
+                        android:src="@drawable/eddieface"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/contact_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/display_name1"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/contact1_pic"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        />
+                    <TextView
+                        android:id="@+id/contact_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/display_number1"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/contact1_pic"
+                        android:layout_below="@+id/contact_name1"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        />
+                    <TextView
+                        android:id="@+id/contact_email1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/display_email1"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/contact1_pic"
+                        android:layout_below="@+id/contact_number1"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+
+                        />
+                    <TextView
+                        android:id="@+id/contact_company1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/display_company1"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/contact1_pic"
+                        android:layout_below="@+id/contact_email1"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bconnect"
+                        android:scaleType="fitCenter"
+                        android:background="@color/colorContact"
+                        android:layout_below="@+id/contact_company1"
+                        android:layout_toRightOf="@+id/contact1_pic"
+                        android:text="@string/display_bcontact"
+                        android:textSize="16dp"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/blink"
+                        android:scaleType="fitCenter"
+                        android:background="@color/colorLinkdin"
+                        android:layout_below="@+id/contact_company1"
+                        android:layout_toRightOf="@+id/bconnect"
+                        android:text="@string/display_blink"
+                        android:textSize="16dp"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

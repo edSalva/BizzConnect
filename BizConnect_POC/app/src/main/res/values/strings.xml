@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">BizConnect_POC</string>
+
+    <string name="title_activity_add_user">AddUserActivity</string>
+    <string name="add_user_info_text">TAP PHONES TO EXCHANGE CARDS</string>
+    <string name="nfc_mime">text/plain</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email
+        completions.
+    </string>
+    <string name="network_error">No network connection</string>
+    <string name="http_host">http://hoyas.mopey.xyz/scripts/</string>
+    <string name="http_get_user">getUser.php?</string>
+    <string name="http_make_user">putUser.php?</string>
+    <string name="http_check_user">checkUser.php?</string>
+    <string name="utf_8">utf-8</string>
+    <string name="nfc_not_enabled">NFC is not enabled</string>
+    <string name="create_user">Create New User</string>
+    <string name="take_profile">Take your profile pic</string>
+    <string name="please_take_profile">Please smile for your new profile picture!</string>
+    <string name="nfc_not_enabled_exit">NFC is necessary for this app. Will now exit</string>
+    <string name="plz_enable_nfc">Please enable NFC and beam support</string>
+    <string name="enter_event">Enter Event</string>
+    <string name="plz_enter_event">Please enter the event you met this person</string>
+    <string name="title_activity_card_view">CardViewActivity</string>
+    <string name="collection">Card Collection</string>
+
+
+    <string name="display_username">Username:</string>
+    <string name="display_name">Name:</string>
+    <string name="display_email">Email:</string>
+    <string name="display_number">Phone Number: </string>
+    <string name="display_name1">Eddie Salvatierra</string>
+    <string name="display_email1">edsalva123@gmail.com</string>
+    <string name="display_number1">443-619-9003</string>
+    <string name="display_company1">RPM Tech</string>
+    <string name="display_bcontact">Add Contact</string>
+    <string name="display_blink">Linkedin</string>
+    <string name="action_new_user">Create New Account</string>
+    <string name="action_register">Register</string>
+    <string name="action_viewcards">View Saved Business Cards</string>
+</resources>
